@@ -1,0 +1,38 @@
+# Xilinx Vitis / Eclipse workspace state
+/.metadata/
+/.Xil/
+/RemoteSystemsTempFiles/
+/.analytics
+
+# Tool logs and journals
+*.log
+*.jou
+*.str
+*.wdb
+
+# Application build output
+**/Debug/
+**/Release/
+
+# Generated platform output and BSPs
+**/export/
+**/resources/
+**/logs/
+**/.log/
+**/ps7_cortexa9_0/
+**/zynq_fsbl/
+
+# Compiler and linker output
+*.o
+*.d
+*.a
+*.elf
+*.map
+*.bin
+
+# Editor and operating-system clutter
+*~
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
