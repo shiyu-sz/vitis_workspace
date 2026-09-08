@@ -20,3 +20,11 @@ domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 platform generate
+platform config -updatehw {/home/sy/vivado_project/gpio_emio/design_1_wrapper.xsa}
+platform generate -domains 
+platform generate
+platform active {gpio_emio_wrapper}
+platform config -updatehw {/home/sy/vivado_project/gpio_emio/design_1_wrapper.xsa}
+platform generate -domains 
+platform clean
+platform generate

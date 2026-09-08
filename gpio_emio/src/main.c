@@ -7,9 +7,11 @@
 
 #define GPIOPS_ID XPAR_XGPIOPS_0_DEVICE_ID   //PS端  GPIO器件 ID
 
-#define MIO_LED0 16   //PS_LED0 连接到 MIO16
+#define MIO_LED0 7   //PS_LED0 连接到 MIO7
+#define MIO_KEY0 47   //PS_KEY0 连接到 MIO47
 
-#define EMIO_KEY 54  //PL_KEY0 连接到EMIO0
+#define EMIO_KEY0 54  //PL_KEY0 连接到EMIO0
+#define EMIO_LED0 55  //PL_LED0 连接到EMIO1
 
 int main()
 {
@@ -25,17 +27,31 @@ int main()
 
     //设置LED为输出
     XGpioPs_SetDirectionPin(&gpiops_inst, MIO_LED0, 1);
+    XGpioPs_SetDirectionPin(&gpiops_inst, EMIO_LED0, 1);
     //使能LED输出
     XGpioPs_SetOutputEnablePin(&gpiops_inst, MIO_LED0, 1);
+    XGpioPs_SetOutputEnablePin(&gpiops_inst, EMIO_LED0, 1);
 
     //设置KEY为输入
-    XGpioPs_SetDirectionPin(&gpiops_inst, EMIO_KEY, 0);
+    XGpioPs_SetDirectionPin(&gpiops_inst, EMIO_KEY0, 0);
+    XGpioPs_SetDirectionPin(&gpiops_inst, MIO_KEY0, 0);
 
     //读取按键状态，用于控制LED亮灭
     while(1){
 
-        XGpioPs_WritePin(&gpiops_inst, MIO_LED0,
-                ~XGpioPs_ReadPin(&gpiops_inst, EMIO_KEY));
+        XGpioPs_WritePin(&gpiops_inst, MIO_LED0, ~XGpioPs_ReadPin(&gpiops_inst, EMIO_KEY0));
+
+        XGpioPs_WritePin(&gpiops_inst, EMIO_LED0, ~XGpioPs_ReadPin(&gpiops_inst, MIO_KEY0));
+
+        /*
+        printf("MIO_KEY0 = %d\n", XGpioPs_ReadPin(&gpiops_inst, MIO_KEY0));
+        XGpioPs_WritePin(&gpiops_inst, EMIO_LED0, 0);
+        XGpioPs_WritePin(&gpiops_inst, MIO_LED0, 0);
+        sleep(1);
+        XGpioPs_WritePin(&gpiops_inst, EMIO_LED0, 1);
+        XGpioPs_WritePin(&gpiops_inst, MIO_LED0, 1);
+        sleep(1);
+        */
     }
 
     return 0;

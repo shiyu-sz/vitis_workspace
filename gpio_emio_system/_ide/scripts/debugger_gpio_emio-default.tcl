@@ -13,7 +13,7 @@ connect -url tcp:127.0.0.1:3121
 targets -set -nocase -filter {name =~"APU*"}
 rst -system
 after 3000
-targets -set -filter {jtag_cable_name =~ "Digilent JTAG-HS1 210512180081" && level==0 && jtag_device_ctx=="jsn-JTAG-HS1-210512180081-13722093-0"}
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT2 B176A1F9ABCD" && level==0 && jtag_device_ctx=="jsn-JTAG-SMT2-B176A1F9ABCD-23727093-0"}
 fpga -file /home/sy/vitis_workspace/gpio_emio/_ide/bitstream/design_1_wrapper.bit
 targets -set -nocase -filter {name =~"APU*"}
 loadhw -hw /home/sy/vitis_workspace/gpio_emio_wrapper/export/gpio_emio_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
