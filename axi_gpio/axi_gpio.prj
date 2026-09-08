@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="axi_gpio" location="/home/sy/vitis_workspace/axi_gpio" platform="/home/sy/vitis_workspace/axi_gpio_wrapper/export/axi_gpio_wrapper/axi_gpio_wrapper.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="axi_gpio_system" sysConfig="axi_gpio_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="15a3dffa95e95ac5775d9a45a18a128a">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.52763777">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1434858941" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
