@@ -77,7 +77,7 @@
 </DIV>
 </A>
 </DIV>
-<DIV class="content_container">This design is targeted for xc7z010i board (part number: xc7z010iclg400-1l)
+<DIV class="content_container">This design is targeted for xc7z020 board (part number: xc7z020clg400-1)
 
 <br>
 <H1>Zynq Design Summary</H1>
@@ -87,7 +87,7 @@
 <B>Device</B>
 </TD>
 <TD width=80% BGCOLOR=#E6E6E6>
-xc7z010i
+xc7z020
 </TD>
 </TR>
 <TR valign="top">
@@ -103,7 +103,7 @@ xc7z010i
 <B>Part</B>
 </TD>
 <TD width=80% BGCOLOR=#E6E6E6>
-xc7z010iclg400-1l
+xc7z020clg400-1
 </TD>
 </TR>
 <TR valign="top">
@@ -705,22 +705,22 @@ Xilinx
 <B>MIO 24</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-UART 1
+
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-tx
+
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-LVCMOS 3.3V
+
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-slow
+
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-enabled
+
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-out
+
 </TD>
 </TR>
 <TR valign="top">
@@ -728,22 +728,22 @@ out
 <B>MIO 25</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-UART 1
+
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-rx
+
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-LVCMOS 3.3V
+
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-slow
+
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-enabled
+
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-in
+
 </TD>
 </TR>
 <TR valign="top">
@@ -1257,22 +1257,22 @@ in
 <B>MIO 48</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-
+UART 1
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-
+tx
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-
+LVCMOS 3.3V
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-
+slow
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-
+enabled
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-
+out
 </TD>
 </TR>
 <TR valign="top">
@@ -1280,22 +1280,22 @@ in
 <B>MIO 49</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-
+UART 1
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-
+rx
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-
+LVCMOS 3.3V
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-
+slow
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-
+enabled
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-
+in
 </TD>
 </TR>
 <TR valign="top">
@@ -1431,7 +1431,7 @@ MT41K128M16 JT-125
 <B>DRAM bus width</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-16 Bit
+32 Bit
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 Select the desired data width. Refer to the Thechnical Reference Manual(TRM) for a detailed list of supported DDR data widths
@@ -8909,10 +8909,10 @@ ddrc_ctrl
 <B>c</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DDR bus width control 00: 32-bit 01: 16-bit 1x: reserved</B>
@@ -9032,7 +9032,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>84</B>
+<B>80</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDRC Control</B>
@@ -11514,10 +11514,10 @@ ddrc_ctrl
 <B>f</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>6</B>
+<B>7</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>6</B>
+<B>7</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the address bits used as bank address bit 0. Valid Range: 0 to 14. Internal Base: 5. The selected address bit for each of the bank address bits is determined by adding the Internal Base to the value of this field.</B>
@@ -11534,10 +11534,10 @@ ddrc_ctrl
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>6</B>
+<B>7</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>60</B>
+<B>70</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the address bits used as bank address bit 1. Valid Range: 0 to 14; Internal Base: 6. The selected address bit for each of the bank address bits is determined by adding the Internal Base to the value of this field.</B>
@@ -11554,10 +11554,10 @@ ddrc_ctrl
 <B>f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>6</B>
+<B>7</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>600</B>
+<B>700</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bit used as bank address bit 2. Valid range 0 to 14, and 15. Internal Base: 7. The selected address bit is determined by adding the Internal Base to the value of this field. If set to 15, bank address bit 2 is set to 0.</B>
@@ -11617,7 +11617,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>666</B>
+<B>777</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Row/Column address bits</B>
@@ -11781,10 +11781,10 @@ ddrc_ctrl
 <B>f0000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>f</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>f0000</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Full bus width mode: Selects the address bit used as column address bit 9. Half bus width mode: Selects the address bit used as column address bit 11. (Column address bit 10 in LPDDR2 mode) Valid Range: 0 to 7, and 15 Internal Base: 11 The selected address bit is determined by adding the Internal Base to the value of this field. If set to 15, this column address bit is set to 0. Note: Per JEDEC spec, column address bit 10 is reserved for indicating auto-precharge, and hence no source address bit can be mapped to column address bit 10. In LPDDR2, there is a dedicated bit for auto-precharge in the CA bus, and hence column bit 10 is used.</B>
@@ -11864,7 +11864,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>ffff0000</B>
+<B>fff00000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Column address bits</B>
@@ -11948,10 +11948,10 @@ ddrc_ctrl
 <B>f</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bits used as row address bit 0. Valid Range: 0 to 11. Internal Base: 9 The selected address bit for each of the row address bits is determined by adding the Internal Base to the value of this field</B>
@@ -11968,10 +11968,10 @@ ddrc_ctrl
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>50</B>
+<B>60</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bits used as row address bit 1. Valid Range: 0 to 11. Internal Base: 10 The selected address bit for each of the row address bits is determined by adding the Internal Base to the value of this field.</B>
@@ -11988,10 +11988,10 @@ ddrc_ctrl
 <B>f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>500</B>
+<B>600</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bits used as row address bits 2 to 11. Valid Range: 0 to 11. Internal Base: 11 (for row address bit 2) to 20 (for row address bit 11) The selected address bit for each of the row address bits is determined by adding the Internal Base to the value of this field.</B>
@@ -12008,10 +12008,10 @@ ddrc_ctrl
 <B>f000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>5000</B>
+<B>6000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bit used as row address bit 12. Valid Range: 0 to 8, Internal Base: 21 The selected address bit is determined by adding the Internal Base to the value of this field. If set to 15, row address bit 12 is set to 0.</B>
@@ -12028,10 +12028,10 @@ ddrc_ctrl
 <B>f0000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>50000</B>
+<B>60000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bit used as row address bit 13. Valid Range: 0 to 7, Internal Base: 22 The selected address bit is determined by adding the Internal Base to the value of this field. If set to 15, row address bit 13 is set to 0.</B>
@@ -12091,7 +12091,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>ff55555</B>
+<B>ff66666</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Select DRAM row address bits</B>
@@ -16063,10 +16063,10 @@ ddrc_ctrl
 <B>1</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Data bus width selection for Read FIFO RE generation. One bit for each data slice. 0: read data responses are ignored. 1: data slice is valid. Note: The Phy Data Slice 0 must always be enabled.</B>
@@ -16206,7 +16206,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>40000000</B>
+<B>40000001</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY configuration register for data slice 0.</B>
@@ -16290,10 +16290,10 @@ ddrc_ctrl
 <B>1</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Data bus width selection for Read FIFO RE generation. One bit for each data slice. 0: read data responses are ignored. 1: data slice is valid. Note: The Phy Data Slice 0 must always be enabled.</B>
@@ -16433,7 +16433,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>40000000</B>
+<B>40000001</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY configuration register for data slice 0.</B>
@@ -22151,10 +22151,10 @@ ddrc_ctrl
 <B>c</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DDR bus width control 00: 32-bit 01: 16-bit 1x: reserved</B>
@@ -22274,7 +22274,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>85</B>
+<B>81</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDRC Control</B>
@@ -22768,12 +22768,12 @@ DDRIOB_DCI_CTRL
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
-<A href="#MIO_PIN_24">
-MIO_PIN_24
+<A href="#MIO_PIN_48">
+MIO_PIN_48
 </A>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8000760</B>
+<B>0XF80007C0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 <B>32</B>
@@ -22785,17 +22785,17 @@ MIO_PIN_24
 <B>0x000000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>MIO Pin 24 Control</B>
+<B>MIO Pin 48 Control</B>
 </TD>
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
-<A href="#MIO_PIN_25">
-MIO_PIN_25
+<A href="#MIO_PIN_49">
+MIO_PIN_49
 </A>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8000764</B>
+<B>0XF80007C4</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 <B>32</B>
@@ -22807,7 +22807,7 @@ MIO_PIN_25
 <B>0x000000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>MIO Pin 25 Control</B>
+<B>MIO Pin 49 Control</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -23863,10 +23863,10 @@ SLCR_LOCK
 <B>6</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>2</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Input buffer control: 00: Input off (input signal to selected controller is driven Low). 01: Vref based differential receiver for SSTL, HSTL. 10: Differential input receiver. 11: LVCMOS receiver.</B>
@@ -23903,10 +23903,10 @@ SLCR_LOCK
 <B>10</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>10</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Tri State Termination Enable: 0: disable 1: enable</B>
@@ -23923,10 +23923,10 @@ SLCR_LOCK
 <B>60</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>60</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DCI Mode Selection: 00: DCI Disabled (DDR2/3 ADDR and CLOCK) 01: DCI Drive (LPDDR2) 10: reserved 11: DCI Termination (DDR2/3 DATA and DIFF)</B>
@@ -23983,10 +23983,10 @@ SLCR_LOCK
 <B>600</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>600</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Enables output mode to enable output ties to 00: ibuf 01 and 10: reserved 11: obuf</B>
@@ -24003,10 +24003,10 @@ SLCR_LOCK
 <B>800</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>800</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>enables pullup on output 0: no pullup 1: pullup enabled</B>
@@ -24026,7 +24026,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>800</B>
+<B>672</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR IOB Config for Data 31:16</B>
@@ -24397,10 +24397,10 @@ SLCR_LOCK
 <B>6</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>2</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>4</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Input buffer control: 00: Input off (input signal to selected controller is driven Low). 01: Vref based differential receiver for SSTL, HSTL. 10: Differential input receiver. 11: LVCMOS receiver.</B>
@@ -24437,10 +24437,10 @@ SLCR_LOCK
 <B>10</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>10</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Tri State Termination Enable: 0: disable 1: enable</B>
@@ -24457,10 +24457,10 @@ SLCR_LOCK
 <B>60</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>60</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DCI Mode Selection: 00: DCI Disabled (DDR2/3 ADDR and CLOCK) 01: DCI Drive (LPDDR2) 10: reserved 11: DCI Termination (DDR2/3 DATA and DIFF)</B>
@@ -24517,10 +24517,10 @@ SLCR_LOCK
 <B>600</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>600</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Enables output mode to enable output ties to 00: ibuf 01 and 10: reserved 11: obuf</B>
@@ -24537,10 +24537,10 @@ SLCR_LOCK
 <B>800</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>800</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>enables pullup on output 0: no pullup 1: pullup enabled</B>
@@ -24560,7 +24560,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>800</B>
+<B>674</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR IOB Config for DQS 3:2</B>
@@ -25779,10 +25779,10 @@ SLCR_LOCK
 <B>60</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>60</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Enables External VREF input x0: Disable External VREF for lower 16 bits x1: Enable External VREF for lower 16 bits 0x: Disable External VREF for upper 16 bits 1x: Enable External VREF for upper 16 bits</B>
@@ -25922,7 +25922,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>220</B>
+<B>260</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR IOB Buffer Control</B>
@@ -26614,7 +26614,7 @@ SLCR_LOCK
 </TABLE>
 <P>
 <H1>MIO PROGRAMMING</H1>
-<H2><a name="MIO_PIN_24">Register (<A href=#mod___slcr> slcr </A>)MIO_PIN_24</a></H2>
+<H2><a name="MIO_PIN_48">Register (<A href=#mod___slcr> slcr </A>)MIO_PIN_48</a></H2>
 <TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
 <TR valign="top">
 <TD width=15% BGCOLOR=#FFFF00>
@@ -26638,10 +26638,10 @@ SLCR_LOCK
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>MIO_PIN_24</B>
+<B>MIO_PIN_48</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8000760</B>
+<B>0XF80007C0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 <B>32</B>
@@ -26716,7 +26716,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 0 Mux Select 0: Level 1 Mux 1: Ethernet 0 RGMII RxD Bit 1, Input</B>
+<B>Level 0 Mux Select 0: Level 1 Mux 1: reserved</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -26736,7 +26736,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 1 Mux Select 0: Level 2 Mux 1: Trace Port Clock output, Output</B>
+<B>Level 1 Mux Select 0: Level 2 Mux 1: USB 1 ULPI Clock, Input/Output</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -26756,7 +26756,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 2 Mux Select 00: Level 3 Mux 01: SRAM/NOR Address Bit 9, Output 10: reserved 11: SDIO 0 Power Control, Output</B>
+<B>Level 2 Mux Select 00: Level 3 Mux 01: reserved 10: reserved 11: SDIO 0 Power Control, Output</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -26776,7 +26776,7 @@ SLCR_LOCK
 <B>e0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 3 Mux Select 000: GPIO 24 (bank 0), Input/Output 001: CAN 1 Tx, Output 010: I2C 1 Serial Clock, Input/Output 011: PJTAG TCK, Input 100: SDIO 1 Clock, Input/Output 101: SPI 1 Serial Clock, Input/Output 110: reserved 111: UART 1 TxD, Output</B>
+<B>Level 3 Mux Select 000: GPIO 48 (bank 1), Input/Output 001: CAN 1 Tx, Output 010: I2C 1 Serial Clock, Input/Output 011: PJTAG TCK, Input 100: SDIO 1 Clock, Input/Output 101: SPI 1 Serial Clock, Input/Output 110: reserved 111: UART 1 TxD, Output</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -26861,7 +26861,7 @@ SLCR_LOCK
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>MIO_PIN_24@0XF8000760</B>
+<B>MIO_PIN_48@0XF80007C0</B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
 <B>31:0</B>
@@ -26876,12 +26876,12 @@ SLCR_LOCK
 <B>16e0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
-<B>MIO Pin 24 Control</B>
+<B>MIO Pin 48 Control</B>
 </TD>
 </TR>
 </TABLE>
 <P>
-<H2><a name="MIO_PIN_25">Register (<A href=#mod___slcr> slcr </A>)MIO_PIN_25</a></H2>
+<H2><a name="MIO_PIN_49">Register (<A href=#mod___slcr> slcr </A>)MIO_PIN_49</a></H2>
 <TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
 <TR valign="top">
 <TD width=15% BGCOLOR=#FFFF00>
@@ -26905,10 +26905,10 @@ SLCR_LOCK
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>MIO_PIN_25</B>
+<B>MIO_PIN_49</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8000764</B>
+<B>0XF80007C4</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 <B>32</B>
@@ -26983,7 +26983,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 0 Mux Select 0: Level 1 Mux 1: Ethernet 0 RGMII RxD Bit2, Input</B>
+<B>Level 0 Mux Select 0: Level 1 Mux 1: reserved</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -27003,7 +27003,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 1 Mux Select 0: Level 2 Mux 1: Trace Port Control Signal, Output</B>
+<B>Level 1 Mux Select 0: Level 2 Mux 1: USB 1 ULPI Data Bit 5, Input/Output</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -27023,7 +27023,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 2 Mux Select 00: Level 3 Mux 01: SRAM/NOR Address Bit 10, Output 10: reserved 11: SDIO 1 Power Control, Output</B>
+<B>Level 2 Mux Select 00: Level 3 Mux 01: reserved 10: reserved 11: SDIO 1 Power Control, Output</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -27043,7 +27043,7 @@ SLCR_LOCK
 <B>e0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 3 Mux Select 000: GPIO 25 (bank 0), Input/Output 001: CAN 1 Rx, Input 010: I2C 1 Serial Data, Input/Output 011: PJTAG TMS, Input 100: SDIO 1 IO Bit 1, Input/Output 101: SPI 1 Slave Select 0, Input/Output 110: reserved 111: UART 1 RxD, Input</B>
+<B>Level 3 Mux Select 000: GPIO 49 (bank 1), Input/Output 001: CAN 1 Rx, Input 010: I2C 1 Serial Data, Input/Output 011: PJTAG TMS, Input 100: SDIO 1 IO Bit 1, Input/Output 101: SPI 1 Select 0, Input/Output 110: reserved 111: UART 1 RxD, Input</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -27128,7 +27128,7 @@ SLCR_LOCK
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>MIO_PIN_25@0XF8000764</B>
+<B>MIO_PIN_49@0XF80007C4</B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
 <B>31:0</B>
@@ -27143,7 +27143,7 @@ SLCR_LOCK
 <B>16e1</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
-<B>MIO Pin 25 Control</B>
+<B>MIO Pin 49 Control</B>
 </TD>
 </TR>
 </TABLE>
@@ -27880,10 +27880,10 @@ CTRL
 <B>80</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>80</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Use ibuf_disable_into control ibuf 0: ibuf is enabled 1: use ibuf_disable_in_to control enable NOTE: This must be 0 during DRAM init/training and can only be set to 1 after init/training completes.</B>
@@ -27900,10 +27900,10 @@ CTRL
 <B>100</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>100</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Termination is used during read transactions and may be disabled (automatically by hardware) when there are no reads taking place through the DDR Interface. Disabling termination reduces power consumption. 0: termination always enabled 1: use 'dynamic_dci_ts' to disable termination when not in use NOTE: This bit must be 0 during DRAM init/training. It may be set to 1 after init/training completes.</B>
@@ -27923,7 +27923,7 @@ CTRL
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>0</B>
+<B>180</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR IOB Config for Data 31:16</B>
@@ -28134,10 +28134,10 @@ CTRL
 <B>80</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>80</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Use ibuf_disable_into control ibuf 0: ibuf is enabled 1: use ibuf_disable_in_to control enable NOTE: This must be 0 during DRAM init/training and can only be set to 1 after init/training completes.</B>
@@ -28154,10 +28154,10 @@ CTRL
 <B>100</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>100</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Termination is used during read transactions and may be disabled (automatically by hardware) when there are no reads taking place through the DDR Interface. Disabling termination reduces power consumption. 0: termination always enabled 1: use 'dynamic_dci_ts' to disable termination when not in use NOTE: This bit must be 0 during DRAM init/training. It may be set to 1 after init/training completes.</B>
@@ -28177,7 +28177,7 @@ CTRL
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>0</B>
+<B>180</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR IOB Config for DQS 3:2</B>
@@ -37757,10 +37757,10 @@ ddrc_ctrl
 <B>c</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DDR bus width control 00: 32-bit 01: 16-bit 1x: reserved</B>
@@ -37880,7 +37880,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>84</B>
+<B>80</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDRC Control</B>
@@ -40602,10 +40602,10 @@ ddrc_ctrl
 <B>f</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>6</B>
+<B>7</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>6</B>
+<B>7</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the address bits used as bank address bit 0. Valid Range: 0 to 14. Internal Base: 5. The selected address bit for each of the bank address bits is determined by adding the Internal Base to the value of this field.</B>
@@ -40622,10 +40622,10 @@ ddrc_ctrl
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>6</B>
+<B>7</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>60</B>
+<B>70</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the address bits used as bank address bit 1. Valid Range: 0 to 14; Internal Base: 6. The selected address bit for each of the bank address bits is determined by adding the Internal Base to the value of this field.</B>
@@ -40642,10 +40642,10 @@ ddrc_ctrl
 <B>f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>6</B>
+<B>7</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>600</B>
+<B>700</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bit used as bank address bit 2. Valid range 0 to 14, and 15. Internal Base: 7. The selected address bit is determined by adding the Internal Base to the value of this field. If set to 15, bank address bit 2 is set to 0.</B>
@@ -40705,7 +40705,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>666</B>
+<B>777</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Row/Column address bits</B>
@@ -40869,10 +40869,10 @@ ddrc_ctrl
 <B>f0000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>f</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>f0000</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Full bus width mode: Selects the address bit used as column address bit 9. Half bus width mode: Selects the address bit used as column address bit 11. (Column address bit 10 in LPDDR2 mode) Valid Range: 0 to 7, and 15 Internal Base: 11 The selected address bit is determined by adding the Internal Base to the value of this field. If set to 15, this column address bit is set to 0. Note: Per JEDEC spec, column address bit 10 is reserved for indicating auto-precharge, and hence no source address bit can be mapped to column address bit 10. In LPDDR2, there is a dedicated bit for auto-precharge in the CA bus, and hence column bit 10 is used.</B>
@@ -40952,7 +40952,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>ffff0000</B>
+<B>fff00000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Column address bits</B>
@@ -41036,10 +41036,10 @@ ddrc_ctrl
 <B>f</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bits used as row address bit 0. Valid Range: 0 to 11. Internal Base: 9 The selected address bit for each of the row address bits is determined by adding the Internal Base to the value of this field</B>
@@ -41056,10 +41056,10 @@ ddrc_ctrl
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>50</B>
+<B>60</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bits used as row address bit 1. Valid Range: 0 to 11. Internal Base: 10 The selected address bit for each of the row address bits is determined by adding the Internal Base to the value of this field.</B>
@@ -41076,10 +41076,10 @@ ddrc_ctrl
 <B>f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>500</B>
+<B>600</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bits used as row address bits 2 to 11. Valid Range: 0 to 11. Internal Base: 11 (for row address bit 2) to 20 (for row address bit 11) The selected address bit for each of the row address bits is determined by adding the Internal Base to the value of this field.</B>
@@ -41096,10 +41096,10 @@ ddrc_ctrl
 <B>f000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>5000</B>
+<B>6000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bit used as row address bit 12. Valid Range: 0 to 11, and 15 Internal Base: 21 The selected address bit is determined by adding the Internal Base to the value of this field. If set to 15, row address bit 12 is set to 0.</B>
@@ -41116,10 +41116,10 @@ ddrc_ctrl
 <B>f0000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>50000</B>
+<B>60000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bit used as row address bit 13. Valid Range: 0 to 11, and 15 Internal Base: 22 The selected address bit is determined by adding the Internal Base to the value of this field. If set to 15, row address bit 13 is set to 0.</B>
@@ -41179,7 +41179,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>ff55555</B>
+<B>ff66666</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Select DRAM row address bits</B>
@@ -45558,10 +45558,10 @@ ddrc_ctrl
 <B>1</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Data bus width selection for Read FIFO RE generation. One bit for each data slice. 0: read data responses are ignored. 1: data slice is valid. Note: The Phy Data Slice 0 must always be enabled.</B>
@@ -45738,10 +45738,10 @@ ddrc_ctrl
 <B>1</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Data bus width selection for Read FIFO RE generation. One bit for each data slice. 0: read data responses are ignored. 1: data slice is valid. Note: The Phy Data Slice 0 must always be enabled.</B>
@@ -45921,7 +45921,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>40000000</B>
+<B>40000001</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY configuration register for data slice 2.</B>
@@ -46005,10 +46005,10 @@ ddrc_ctrl
 <B>1</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Data bus width selection for Read FIFO RE generation. One bit for each data slice. 0: read data responses are ignored. 1: data slice is valid. Note: The Phy Data Slice 0 must always be enabled.</B>
@@ -46188,7 +46188,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>40000000</B>
+<B>40000001</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY configuration register for data slice 3.</B>
@@ -52086,10 +52086,10 @@ ddrc_ctrl
 <B>c</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DDR bus width control 00: 32-bit 01: 16-bit 1x: reserved</B>
@@ -52209,7 +52209,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>85</B>
+<B>81</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDRC Control</B>
@@ -52703,12 +52703,12 @@ DDRIOB_DCI_CTRL
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
-<A href="#MIO_PIN_24">
-MIO_PIN_24
+<A href="#MIO_PIN_48">
+MIO_PIN_48
 </A>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8000760</B>
+<B>0XF80007C0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 <B>32</B>
@@ -52720,17 +52720,17 @@ MIO_PIN_24
 <B>0x000000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>MIO Pin 24 Control</B>
+<B>MIO Pin 48 Control</B>
 </TD>
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
-<A href="#MIO_PIN_25">
-MIO_PIN_25
+<A href="#MIO_PIN_49">
+MIO_PIN_49
 </A>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8000764</B>
+<B>0XF80007C4</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 <B>32</B>
@@ -52742,7 +52742,7 @@ MIO_PIN_25
 <B>0x000000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>MIO Pin 25 Control</B>
+<B>MIO Pin 49 Control</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -53798,10 +53798,10 @@ SLCR_LOCK
 <B>6</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>2</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Input buffer controls. 00: Input off, reads 0. 01: Vref based differential receiver for SSTL, HSTL. 10: Differential input receiver. 11: LVCMOS receiver.</B>
@@ -53838,10 +53838,10 @@ SLCR_LOCK
 <B>10</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>10</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Tri State Termination Enabled 0 - disabled 1 - enabled</B>
@@ -53858,10 +53858,10 @@ SLCR_LOCK
 <B>60</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>60</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DCI Update 00: DCI Disabled 01: DCI Drive (HSTL12_DCI) 10: reserved 11: DCI Termination (SSTL15_T_DCI)</B>
@@ -53918,10 +53918,10 @@ SLCR_LOCK
 <B>600</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>600</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Enables output mode to enable output ties to 00: ibuf 01 and 10: reserved 11: obuf</B>
@@ -53938,10 +53938,10 @@ SLCR_LOCK
 <B>800</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>800</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>enables pullup on output 0: no pullup 1: pullup enabled</B>
@@ -53961,7 +53961,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>800</B>
+<B>672</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR IOB Config for Data 31:16</B>
@@ -54332,10 +54332,10 @@ SLCR_LOCK
 <B>6</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>2</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>4</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Input buffer controls. 00: Input off, reads 0. 01: Vref based differential receiver for SSTL, HSTL. 10: Differential input receiver. 11: LVCMOS receiver.</B>
@@ -54372,10 +54372,10 @@ SLCR_LOCK
 <B>10</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>10</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Tri State Termination Enabled 0 - disabled 1 - enabled</B>
@@ -54392,10 +54392,10 @@ SLCR_LOCK
 <B>60</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>60</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DCI Update 00: DCI Disabled 01: DCI Drive (HSTL12_DCI) 10: reserved 11: DCI Termination (SSTL15_T_DCI)</B>
@@ -54452,10 +54452,10 @@ SLCR_LOCK
 <B>600</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>600</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Enables output mode to enable output ties to 00: ibuf 01 and 10: reserved 11: obuf</B>
@@ -54472,10 +54472,10 @@ SLCR_LOCK
 <B>800</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>800</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>enables pullup on output 0: no pullup 1: pullup enabled</B>
@@ -54495,7 +54495,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>800</B>
+<B>674</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR IOB Config for DQS 3:2</B>
@@ -55714,10 +55714,10 @@ SLCR_LOCK
 <B>60</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>60</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Enables External VREF input x0: Disable External VREF for lower 16 bits x1: Enable External VREF for lower 16 bits 0x: Disable External VREF for upper 16 bits 1X: Enable External VREF for upper 16 bits</B>
@@ -55857,7 +55857,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>220</B>
+<B>260</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR IOB Buffer Control</B>
@@ -56569,7 +56569,7 @@ SLCR_LOCK
 </TABLE>
 <P>
 <H1>MIO PROGRAMMING</H1>
-<H2><a name="MIO_PIN_24">Register (<A href=#mod___slcr> slcr </A>)MIO_PIN_24</a></H2>
+<H2><a name="MIO_PIN_48">Register (<A href=#mod___slcr> slcr </A>)MIO_PIN_48</a></H2>
 <TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
 <TR valign="top">
 <TD width=15% BGCOLOR=#FFFF00>
@@ -56593,10 +56593,10 @@ SLCR_LOCK
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>MIO_PIN_24</B>
+<B>MIO_PIN_48</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8000760</B>
+<B>0XF80007C0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 <B>32</B>
@@ -56671,7 +56671,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 0 Mux Select 0: Level 1 Mux 1: Ethernet 0 RGMII RxD Bit 1</B>
+<B>Level 0 Mux Select 0: Level 1 Mux 1: reserved</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -56691,7 +56691,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 1 Mux Select 0: Level 2 Mux 1: Trace Port Clock output</B>
+<B>Level 1 Mux Select 0: Level 2 Mux 1: USB 1 ULPI Clock</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -56711,7 +56711,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 2 Mux Select 00: Level 3 Mux 01: SRAM/NOR Address Bit 9 10: reserved 11: SDIO 0 Power Control output</B>
+<B>Level 2 Mux Select 00: Level 3 Mux 01: reserved 10: reserved 11: SDIO 0 Power Control output</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -56731,7 +56731,7 @@ SLCR_LOCK
 <B>e0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 3 Mux Select 000: GPIO 24 (bank 0) 001: CAN 1 Tx 010: I2C 1 Serial Clock 011: PJTAG TCK 100: SDIO 1 Clock 101: SPI 1 serial clock 110: reserved 111: UART 1 TxD</B>
+<B>Level 3 Mux Select 000: GPIO 48 (bank 1) 001: CAN 1 Tx 010: I2C 1 Serial Clock 011: PJTAG TCK 100: SDIO 1 Clock 101: SPI 1 Serial Clock 110: reserved 111: UART 1 TxD</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -56816,7 +56816,7 @@ SLCR_LOCK
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>MIO_PIN_24@0XF8000760</B>
+<B>MIO_PIN_48@0XF80007C0</B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
 <B>31:0</B>
@@ -56831,12 +56831,12 @@ SLCR_LOCK
 <B>16e0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
-<B>MIO Pin 24 Control</B>
+<B>MIO Pin 48 Control</B>
 </TD>
 </TR>
 </TABLE>
 <P>
-<H2><a name="MIO_PIN_25">Register (<A href=#mod___slcr> slcr </A>)MIO_PIN_25</a></H2>
+<H2><a name="MIO_PIN_49">Register (<A href=#mod___slcr> slcr </A>)MIO_PIN_49</a></H2>
 <TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
 <TR valign="top">
 <TD width=15% BGCOLOR=#FFFF00>
@@ -56860,10 +56860,10 @@ SLCR_LOCK
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>MIO_PIN_25</B>
+<B>MIO_PIN_49</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8000764</B>
+<B>0XF80007C4</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 <B>32</B>
@@ -56938,7 +56938,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 0 Mux Select 0: Level 1 Mux 1: Ethernet 0 RGMII RxD Bit2</B>
+<B>Level 0 Mux Select 0: Level 1 Mux 1: reserved</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -56958,7 +56958,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 1 Mux Select 0: Level 2 Mux 1: Trace Port Control Signal output</B>
+<B>Level 1 Mux Select 0: Level 2 Mux 1: USB 1 ULPI Data Bit 5</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -56978,7 +56978,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 2 Mux Select 00: Level 3 Mux 01: SRAM/NOR Address Bit 10 10: reserved 11: SDIO 1 Power Control output</B>
+<B>Level 2 Mux Select 00: Level 3 Mux 01: reserved 10: reserved 11: SDIO 1 Power Control output</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -56998,7 +56998,7 @@ SLCR_LOCK
 <B>e0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 3 Mux Select 000: GPIO 25 (bank 0) 001: CAN 1 Rx 010: I2C 1 Serial Data 011: PJTAG TMS 100: SDIO 1 IO Bit 1 101: SPI 1 Slave Select 0 110: reserved 111: UART 1 RxD</B>
+<B>Level 3 Mux Select 000: GPIO 49 (bank 1) 001: CAN 1 Rx 010: I2C Serial Data 011: PJTAG TMS 100: SDIO 1 IO Bit 1 101: SPI 1 Select 0 110: reserved 111: UART 1 RxD</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -57083,7 +57083,7 @@ SLCR_LOCK
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>MIO_PIN_25@0XF8000764</B>
+<B>MIO_PIN_49@0XF80007C4</B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
 <B>31:0</B>
@@ -57098,7 +57098,7 @@ SLCR_LOCK
 <B>16e1</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
-<B>MIO Pin 25 Control</B>
+<B>MIO Pin 49 Control</B>
 </TD>
 </TR>
 </TABLE>
@@ -57835,10 +57835,10 @@ CTRL
 <B>80</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>80</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Use ibuf_disable_into control ibuf 0: ibuf is enabled 1: use ibuf_disable_in_to control enable</B>
@@ -57855,10 +57855,10 @@ CTRL
 <B>100</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>100</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Use dynamic_dci_ts to control dci 0: termination enabled 1: use 'dynamic_dci_ts' control termination</B>
@@ -57878,7 +57878,7 @@ CTRL
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>0</B>
+<B>180</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR IOB Config for Data 31:16</B>
@@ -58089,10 +58089,10 @@ CTRL
 <B>80</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>80</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Use ibuf_disable_into control ibuf 0: ibuf is enabled 1: use ibuf_disable_in_to control enable</B>
@@ -58109,10 +58109,10 @@ CTRL
 <B>100</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>100</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Use dynamic_dci_ts to control dci 0: termination enabled 1: use 'dynamic_dci_ts' control termination</B>
@@ -58132,7 +58132,7 @@ CTRL
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>0</B>
+<B>180</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDR IOB Config for DQS 3:2</B>
@@ -67667,10 +67667,10 @@ ddrc_ctrl
 <B>c</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DDR bus width control 00 = 32 bit DDR bus 01 = 16 bit DDR bus 1x = reserved</B>
@@ -67790,7 +67790,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>84</B>
+<B>80</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDRC Control Register</B>
@@ -70512,10 +70512,10 @@ ddrc_ctrl
 <B>f</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>6</B>
+<B>7</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>6</B>
+<B>7</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the address bits used as bank address bit 0. Valid Range: 0 to 14 Internal Base: 5 The selected address bit for each of the bank address bits is determined by adding the Internal Base to the value of this field.</B>
@@ -70532,10 +70532,10 @@ ddrc_ctrl
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>6</B>
+<B>7</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>60</B>
+<B>70</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the address bits used as bank address bit 1. Valid Range: 0 to 14; Internal Base: 6. The selected address bit for each of the bank address bits is determined by adding the Internal Base to the value of this field.</B>
@@ -70552,10 +70552,10 @@ ddrc_ctrl
 <B>f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>6</B>
+<B>7</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>600</B>
+<B>700</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bit used as bank address bit 2. Valid range 0 to 14, and 15. Internal Base: 7. The selected address bit is determined by adding the Internal Base to the value of this field. If set to 15, bank address bit 2 is set to 0.</B>
@@ -70615,7 +70615,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>666</B>
+<B>777</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Selects the address bits used as DRAM bank address bits</B>
@@ -70779,10 +70779,10 @@ ddrc_ctrl
 <B>f0000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>f</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>f0000</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Full bus width mode: Selects the address bit used as column address bit 9. Half bus width mode: Selects the address bit used as column address bit 11. (Column address bit 10 in LPDDR2 mode) Valid Range: 0 to 7, and 15 Internal Base: 11 The selected address bit is determined by adding the Internal Base to the value of this field. If set to 15, this column address bit is set to 0. Note: Per JEDEC spec, column address bit 10 is reserved for indicating auto-precharge, and hence no source address bit can be mapped to column address bit 10. In LPDDR2, there is a dedicated bit for auto-precharge in the CA bus, and hence column bit 10 is used.</B>
@@ -70862,7 +70862,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>ffff0000</B>
+<B>fff00000</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Selects the address bits used as DRAM column address bits</B>
@@ -70946,10 +70946,10 @@ ddrc_ctrl
 <B>f</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bits used as row address bit 0. Valid Range: 0 to 11. Internal Base: 9 The selected address bit for each of the row address bits is determined by adding the Internal Base to the value of this field</B>
@@ -70966,10 +70966,10 @@ ddrc_ctrl
 <B>f0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>50</B>
+<B>60</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bits used as row address bit 1. Valid Range: 0 to 11. Internal Base: 10 The selected address bit for each of the row address bits is determined by adding the Internal Base to the value of this field.</B>
@@ -70986,10 +70986,10 @@ ddrc_ctrl
 <B>f00</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>500</B>
+<B>600</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bits used as row address bits 2 to 11. Valid Range: 0 to 11. Internal Base: 11 (for row address bit 2) to 20 (for row address bit 11) The selected address bit for each of the row address bits is determined by adding the Internal Base to the value of this field.</B>
@@ -71006,10 +71006,10 @@ ddrc_ctrl
 <B>f000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>5000</B>
+<B>6000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bit used as row address bit 12. Valid Range: 0 to 11, and 15 Internal Base: 21 The selected address bit is determined by adding the Internal Base to the value of this field. If set to 15, row address bit 12 is set to 0.</B>
@@ -71026,10 +71026,10 @@ ddrc_ctrl
 <B>f0000</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>5</B>
+<B>6</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>50000</B>
+<B>60000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Selects the AXI address bit used as row address bit 13. Valid Range: 0 to 11, and 15 Internal Base: 22 The selected address bit is determined by adding the Internal Base to the value of this field. If set to 15, row address bit 13 is set to 0.</B>
@@ -71089,7 +71089,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>ff55555</B>
+<B>ff66666</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>Selects the address bits used as DRAM row address bits</B>
@@ -75074,10 +75074,10 @@ ddrc_ctrl
 <B>1</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Data bus width selection for Read FIFO RE generation. One bit for each data slice. 1: data slice is valid. 0: read data responses are ignored. Note: The Phy Data Slice 0 must always be enabled.</B>
@@ -75257,7 +75257,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>40000000</B>
+<B>40000001</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY configuration register for data slice 0.</B>
@@ -75341,10 +75341,10 @@ ddrc_ctrl
 <B>1</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Data bus width selection for Read FIFO RE generation. One bit for each data slice. 1: data slice is valid. 0: read data responses are ignored. Note: The Phy Data Slice 0 must always be enabled.</B>
@@ -75524,7 +75524,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>40000000</B>
+<B>40000001</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>PHY configuration register for data slice 0.</B>
@@ -81422,10 +81422,10 @@ ddrc_ctrl
 <B>c</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>4</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DDR bus width control 00 = 32 bit DDR bus 01 = 16 bit DDR bus 1x = reserved</B>
@@ -81545,7 +81545,7 @@ ddrc_ctrl
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>85</B>
+<B>81</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDRC Control Register</B>
@@ -82039,12 +82039,12 @@ DDRIOB_DCI_CTRL
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
-<A href="#MIO_PIN_24">
-MIO_PIN_24
+<A href="#MIO_PIN_48">
+MIO_PIN_48
 </A>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8000760</B>
+<B>0XF80007C0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 <B>32</B>
@@ -82056,17 +82056,17 @@ MIO_PIN_24
 <B>0x000000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>MIO Control for Pin 24</B>
+<B>MIO Control for Pin 48</B>
 </TD>
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
-<A href="#MIO_PIN_25">
-MIO_PIN_25
+<A href="#MIO_PIN_49">
+MIO_PIN_49
 </A>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8000764</B>
+<B>0XF80007C4</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 <B>32</B>
@@ -82078,7 +82078,7 @@ MIO_PIN_25
 <B>0x000000</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>MIO Control for Pin 25</B>
+<B>MIO Control for Pin 49</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -83134,10 +83134,10 @@ SLCR_LOCK
 <B>6</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>2</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Input buffer controls. 00 - Input off, reads 0. 01 - Vref based differential reciever for SSTL, HSTL. 10 - Differential input reciever. 11- LVCMOS reviever.</B>
@@ -83174,10 +83174,10 @@ SLCR_LOCK
 <B>10</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>10</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Tri State Termination Enabled 0 - disabled 1 - enabled</B>
@@ -83194,10 +83194,10 @@ SLCR_LOCK
 <B>60</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>60</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DCI Update 00 - DCI Disabled 01 - DCI Drive (HSTL12_DCI) 10 - Reserved 11 - DCI Termination (SSTL15_T_DCI)</B>
@@ -83254,10 +83254,10 @@ SLCR_LOCK
 <B>600</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>600</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Enables output mode to enable output ties to 00 - ibuf 01 - reserved 10 - reserved 11 - obuf</B>
@@ -83274,10 +83274,10 @@ SLCR_LOCK
 <B>800</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>800</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>enables pullup on output 0 - no pullup 1 - pullup enabled</B>
@@ -83297,7 +83297,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>800</B>
+<B>672</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDRIOB Data 1 Configuration Register</B>
@@ -83668,10 +83668,10 @@ SLCR_LOCK
 <B>6</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>2</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>4</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Input buffer controls. 00 - Input off, reads 0. 01 - Vref based differential reciever for SSTL, HSTL. 10 - Differential input reciever. 11- LVCMOS reviever.</B>
@@ -83708,10 +83708,10 @@ SLCR_LOCK
 <B>10</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>10</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Tri State Termination Enabled 0 - disabled 1 - enabled</B>
@@ -83728,10 +83728,10 @@ SLCR_LOCK
 <B>60</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>60</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>DCI Update 00 - DCI Disabled 01 - DCI Drive (HSTL12_DCI) 10 - Reserved 11 - DCI Termination (SSTL15_T_DCI)</B>
@@ -83788,10 +83788,10 @@ SLCR_LOCK
 <B>600</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>600</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Enables output mode to enable output ties to 00 - ibuf 01 - reserved 10 - reserved 11 - obuf</B>
@@ -83808,10 +83808,10 @@ SLCR_LOCK
 <B>800</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>0</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>800</B>
+<B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>enables pullup on output 0 - no pullup 1 - pullup enabled</B>
@@ -83831,7 +83831,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>800</B>
+<B>674</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDRIOB Differential DQS 1 Configuration Register</B>
@@ -85050,10 +85050,10 @@ SLCR_LOCK
 <B>60</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>1</B>
+<B>3</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>20</B>
+<B>60</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Enables External VREF input X0 - Disable External VREF for lower 16 bits X1 - Enable External VREF for lower 16 bits 0X - Disable External VREF for upper 16 bits 1X - Enable External VREF for upper 16 bits</B>
@@ -85173,7 +85173,7 @@ SLCR_LOCK
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>220</B>
+<B>260</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDRIOB DDR Control Register</B>
@@ -85885,7 +85885,7 @@ SLCR_LOCK
 </TABLE>
 <P>
 <H1>MIO PROGRAMMING</H1>
-<H2><a name="MIO_PIN_24">Register (<A href=#mod___slcr> slcr </A>)MIO_PIN_24</a></H2>
+<H2><a name="MIO_PIN_48">Register (<A href=#mod___slcr> slcr </A>)MIO_PIN_48</a></H2>
 <TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
 <TR valign="top">
 <TD width=15% BGCOLOR=#FFFF00>
@@ -85909,10 +85909,10 @@ SLCR_LOCK
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>MIO_PIN_24</B>
+<B>MIO_PIN_48</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8000760</B>
+<B>0XF80007C0</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 <B>32</B>
@@ -85987,7 +85987,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 0 Mux Select 0= Level 1 Mux Output 1= gem0, Input, gem0_rgmii_rxd[1]- (RX RGMII data)</B>
+<B>Level 0 Mux Select 0= Level 1 Mux Output 1= Not Used</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -86007,7 +86007,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 1 Mux Select 0= Level 2 Mux Output 1= trace_ctl, Output, traceclk- (Trace Port Clock)</B>
+<B>Level 1 Mux Select 0= Level 2 Mux Output 1= usb1, Input, usb1_xcvr_clk_in- (ULPI Clock) 1= usb1, Output, usb1_xcvr_clk_out- (ULPI Clock)</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -86027,7 +86027,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 2 Mux Select 0= Level 3 Mux Output 1= sram_nor, Output, smc_sram_add[9]- (SRAM Address) 2= Not Used 3= sdio_pow, Output, sdio0_bus_pow- (SD card bus power)</B>
+<B>Level 2 Mux Select 0= Level 3 Mux Output 1= Not Used 2= Not Used 3= sdio_pow, Output, sdio0_bus_pow- (SD card bus power)</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -86047,7 +86047,7 @@ SLCR_LOCK
 <B>e0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[24]- (GPIO bank 0) 0= gpio0, Output, gpio_0_pin_out[24]- (GPIO bank 0) 1= can1, Output, can1_phy_tx- (Can TX signal) 2= i2c1, Input, i2c1_scl_input- (SCL signal) 2= i2c1, Output, i2c1_scl_out- (SCL signal) 3= Not Used 4= sd1, Input, sd1_clk_in- (SDSDIO clock) 4= sd1, Output, sd1_clk_out- (SDSDIO clock) 5= spi1, Input, spi1_sclk_in- (SPI Clock) 5= spi1, Output, spi1_sclk_out- (SPI Clock) 6= Not Used 7= ua1, Output, ua1_txd- (UART transmitter serial output)</B>
+<B>Level 3 Mux Select 0= gpio1, Input, gpio_1_pin_in[16]- (GPIO bank 1) 0= gpio1, Output, gpio_1_pin_out[16]- (GPIO bank 1) 1= can1, Output, can1_phy_tx- (Can TX signal) 2= i2c1, Input, i2c1_scl_input- (SCL signal) 2= i2c1, Output, i2c1_scl_out- (SCL signal) 3= Not Used 4= sd1, Input, sd1_clk_in- (SDSDIO clock) 4= sd1, Output, sd1_clk_out- (SDSDIO clock) 5= spi1, Input, spi1_sclk_in- (SPI Clock) 5= spi1, Output, spi1_sclk_out- (SPI Clock) 6= Not Used 7= ua1, Output, ua1_txd- (UART transmitter serial output)</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -86132,7 +86132,7 @@ SLCR_LOCK
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>MIO_PIN_24@0XF8000760</B>
+<B>MIO_PIN_48@0XF80007C0</B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
 <B>31:0</B>
@@ -86147,12 +86147,12 @@ SLCR_LOCK
 <B>16e0</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
-<B>MIO Control for Pin 24</B>
+<B>MIO Control for Pin 48</B>
 </TD>
 </TR>
 </TABLE>
 <P>
-<H2><a name="MIO_PIN_25">Register (<A href=#mod___slcr> slcr </A>)MIO_PIN_25</a></H2>
+<H2><a name="MIO_PIN_49">Register (<A href=#mod___slcr> slcr </A>)MIO_PIN_49</a></H2>
 <TABLE border=1 cellspacing=0 BORDERCOLOR=black WIDTH=100%">
 <TR valign="top">
 <TD width=15% BGCOLOR=#FFFF00>
@@ -86176,10 +86176,10 @@ SLCR_LOCK
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>MIO_PIN_25</B>
+<B>MIO_PIN_49</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0XF8000764</B>
+<B>0XF80007C4</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
 <B>32</B>
@@ -86254,7 +86254,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 0 Mux Select 0= Level 1 Mux Output 1= gem0, Input, gem0_rgmii_rxd[2]- (RX RGMII data)</B>
+<B>Level 0 Mux Select 0= Level 1 Mux Output 1= Not Used</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -86274,7 +86274,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 1 Mux Select 0= Level 2 Mux Output 1= trace_ctl, Output, tracectl- (Trace Port Control Signal)</B>
+<B>Level 1 Mux Select 0= Level 2 Mux Output 1= usb1, Input, usb1_ulpi_rx_data[5]- (ULPI data bus) 1= usb1, Output, usb1_ulpi_tx_data[5]- (ULPI data bus)</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -86294,7 +86294,7 @@ SLCR_LOCK
 <B>0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 2 Mux Select 0= Level 3 Mux Output 1= sram_nor, Output, smc_sram_add[10]- (SRAM Address) 2= Not Used 3= sdio_pow, Output, sdio1_bus_pow- (SD card bus power)</B>
+<B>Level 2 Mux Select 0= Level 3 Mux Output 1= Not Used 2= Not Used 3= sdio_pow, Output, sdio1_bus_pow- (SD card bus power)</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -86314,7 +86314,7 @@ SLCR_LOCK
 <B>e0</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
-<B>Level 3 Mux Select 0= gpio0, Input, gpio_0_pin_in[25]- (GPIO bank 0) 0= gpio0, Output, gpio_0_pin_out[25]- (GPIO bank 0) 1= can1, Input, can1_phy_rx- (Can RX signal) 2= i2c1, Input, i2c1_sda_input- (SDA signal) 2= i2c1, Output, i2c1_sda_out- (SDA signal) 3= Not Used 4= sd1, Input, sd1_data_in[1]- (4-bit Data bus) 4= sd1, Output, sd1_data_out[1]- (4-bit Data bus) 5= spi1, Input, spi1_n_ss_in- (SPI Master Selects) 5= spi1, Output, spi1_n_ss_out[0]- (SPI Master Selects) 6= Not Used 7= ua1, Input, ua1_rxd- (UART receiver serial input)</B>
+<B>Level 3 Mux Select 0= gpio1, Input, gpio_1_pin_in[17]- (GPIO bank 1) 0= gpio1, Output, gpio_1_pin_out[17]- (GPIO bank 1) 1= can1, Input, can1_phy_rx- (Can RX signal) 2= i2c1, Input, i2c1_sda_input- (SDA signal) 2= i2c1, Output, i2c1_sda_out- (SDA signal) 3= Not Used 4= sd1, Input, sd1_data_in[1]- (4-bit Data bus) 4= sd1, Output, sd1_data_out[1]- (4-bit Data bus) 5= spi1, Input, spi1_n_ss_in- (SPI Master Selects) 5= spi1, Output, spi1_n_ss_out[0]- (SPI Master Selects) 6= Not Used 7= ua1, Input, ua1_rxd- (UART receiver serial input)</B>
 </TD>
 </TR>
 <TR valign="top">
@@ -86399,7 +86399,7 @@ SLCR_LOCK
 </TR>
 <TR valign="top">
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>MIO_PIN_25@0XF8000764</B>
+<B>MIO_PIN_49@0XF80007C4</B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
 <B>31:0</B>
@@ -86414,7 +86414,7 @@ SLCR_LOCK
 <B>16e1</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
-<B>MIO Control for Pin 25</B>
+<B>MIO Control for Pin 49</B>
 </TD>
 </TR>
 </TABLE>
@@ -87151,10 +87151,10 @@ CTRL
 <B>80</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>80</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Use ibuf_disable_into control ibuf 0 -ibuf is always enabled 1 - use ibuf_disable_in_to control enable</B>
@@ -87171,10 +87171,10 @@ CTRL
 <B>100</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>100</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Use dynamic_dci_ts to control dci 0 - termination enabled 1 - use 'dynamic_dci_ts' control termination</B>
@@ -87194,7 +87194,7 @@ CTRL
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>0</B>
+<B>180</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDRIOB Data 1 Configuration Register</B>
@@ -87405,10 +87405,10 @@ CTRL
 <B>80</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>80</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Use ibuf_disable_into control ibuf 0 -ibuf is always enabled 1 - use ibuf_disable_in_to control enable</B>
@@ -87425,10 +87425,10 @@ CTRL
 <B>100</B>
 </TD>
 <TD width=10% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>1</B>
 </TD>
 <TD width=15% BGCOLOR=#FBF5EF>
-<B>0</B>
+<B>100</B>
 </TD>
 <TD width=35% BGCOLOR=#FBF5EF>
 <B>Use dynamic_dci_ts to control dci 0 - termination enabled 1 - use 'dynamic_dci_ts' control termination</B>
@@ -87448,7 +87448,7 @@ CTRL
 <B></B>
 </TD>
 <TD width=15% BGCOLOR=#C0C0C0>
-<B>0</B>
+<B>180</B>
 </TD>
 <TD width=35% BGCOLOR=#C0C0C0>
 <B>DDRIOB Differential DQS 1 Configuration Register</B>

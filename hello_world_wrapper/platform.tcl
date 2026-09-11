@@ -20,3 +20,6 @@ domain active {zynq_fsbl}
 domain active {standalone_ps7_cortexa9_0}
 platform generate -quick
 platform generate
+platform active {hello_world_wrapper}
+platform config -updatehw {/home/sy/vivado_project/hello_world/design_1_wrapper.xsa}
+platform generate
