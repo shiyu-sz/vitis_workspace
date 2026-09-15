@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="qspi_test" location="/home/sy/vitis_workspace/qspi_test" platform="/home/sy/vitis_workspace/qspi_test_wrapper/export/qspi_test_wrapper/qspi_test_wrapper.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="qspi_test_system" sysConfig="qspi_test_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="aa2e2b741a6ab6c9c93b698ede65af49">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.54758106">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.2137807011" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
