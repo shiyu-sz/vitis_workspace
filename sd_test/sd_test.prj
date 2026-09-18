@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="sd_test" location="/home/sy/vitis_workspace/sd_test" platform="/home/sy/vitis_workspace/sd_test_wrapper/export/sd_test_wrapper/sd_test_wrapper.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="sd_test_system" sysConfig="sd_test_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="19c4ad516251be347b379ce1161a6930">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.2017334361">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.452237529" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
