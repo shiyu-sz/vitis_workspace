@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="cpu1_led" location="/home/sy/vitis_workspace/cpu1_led" platform="/home/sy/vitis_workspace/dual_core_amp_wrapper/export/dual_core_amp_wrapper/dual_core_amp_wrapper.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="dual_core_amp_system" sysConfig="dual_core_amp_wrapper" runtime="C/C++" cpu="standalone_ps7_cortexa9_1" cpuInstance="ps7_cortexa9_1" os="standalone" mssSignature="9d8e8b26101f044149b8112406c4f7fb">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1234718933">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.30332598" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
