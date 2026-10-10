@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="breath_led_hls" location="/home/sy/vitis_workspace/breath_led_hls" platform="/home/sy/vitis_workspace/breath_led_hls_wrapper/export/breath_led_hls_wrapper/breath_led_hls_wrapper.xpfm" platformUID="xilinx:::0.0(custom)" systemProject="breath_led_hls_system" sysConfig="breath_led_hls_wrapper" runtime="cpp" cpu="standalone_ps7_cortexa9_0" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="9e78a9af19ded659177a94d2207da78d">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1644451715">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.447704639" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>
