@@ -22,3 +22,8 @@ platform generate -quick
 bsp reload
 bsp reload
 platform generate
+platform active {ov2640_to_hdmi_wrapper}
+platform config -updatehw {/home/sy/vivado_project/vitis/ov2640_to_hdmi/design_1_wrapper.xsa}
+platform generate
+platform clean
+platform generate

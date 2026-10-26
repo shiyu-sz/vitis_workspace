@@ -1,6 +1,6 @@
 /******************************************************************************
 *
-* Copyright (C) 2008 - 2014 Xilinx, Inc.  All rights reserved.
+* Copyright (C) 2014 - 2015 Xilinx, Inc.  All rights reserved.
 *
 * Permission is hereby granted, free of charge, to any person obtaining a copy
 * of this software and associated documentation files (the "Software"), to deal
@@ -30,12 +30,41 @@
 *
 ******************************************************************************/
 
-#ifndef __PLATFORM_H_
-#define __PLATFORM_H_
+#ifndef VDMA_API_H_
+#define VDMA_API_H_
 
-#include "platform_config.h"
+/* ------------------------------------------------------------ */
+/*				Include File Definitions						*/
+/* ------------------------------------------------------------ */
 
-void init_platform();
-void cleanup_platform();
+#include "xaxivdma.h"
+#include "xparameters.h"
+#include "xil_exception.h"
 
-#endif
+/* ------------------------------------------------------------ */
+/*					General Type Declarations					*/
+/* ------------------------------------------------------------ */
+
+typedef enum
+{
+	ONLY_READ=1,    //VDMA只开启读通道
+	ONLY_WRITE,     //VDMA只开启写通道
+	BOTH            //同时开启VDMA写通道和读通道
+}vdma_run_mode;
+
+/* ------------------------------------------------------------ */
+/*					Procedure Declarations						*/
+/* ------------------------------------------------------------ */
+int run_vdma_frame_buffer(XAxiVdma* InstancePtr, int DeviceId, int hsize,
+		int vsize, int buf_base_addr, int number_frame_count,
+		int enable_frm_cnt_intr,vdma_run_mode mode);
+/* ------------------------------------------------------------ */
+
+/************************************************************************/
+
+#endif /* VDMA_API_H_ */
+
+
+
+
+
