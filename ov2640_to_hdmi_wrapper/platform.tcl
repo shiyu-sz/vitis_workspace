@@ -27,3 +27,12 @@ platform config -updatehw {/home/sy/vivado_project/vitis/ov2640_to_hdmi/design_1
 platform generate
 platform clean
 platform generate
+platform config -updatehw {/home/sy/vivado_project/vitis/ov2640_to_hdmi/design_1_wrapper.xsa}
+platform generate -domains 
+bsp reload
+bsp reload
+platform generate -domains 
+platform config -updatehw {/home/sy/vivado_project/vitis/ov2640_to_hdmi/design_1_wrapper.xsa}
+platform generate -domains 
+platform config -updatehw {/home/sy/vivado_project/vitis/ov2640_to_hdmi/design_1_wrapper.xsa}
+platform generate -domains 

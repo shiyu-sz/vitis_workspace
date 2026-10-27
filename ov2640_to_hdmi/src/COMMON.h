@@ -28,6 +28,7 @@
 #include "lcd.h"
 #include "PS_IIC.h"
 #include "Camera.h"
+#include "SII9022.h"
 
 
 

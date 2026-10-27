@@ -510,12 +510,12 @@ void Camera_Init()
 			SCCB_Write_REG8(0x86,0x3D);
 			SCCB_Write_REG8(0x50,0x00);
 			SCCB_Write_REG8(0x51,0xC8);//图像窗口设置
-			SCCB_Write_REG8(0x52,0x96);//图像窗口设置
+			SCCB_Write_REG8(0x52,0x78);//图像窗口高度480，裁切SVGA图像的中间部分
 			SCCB_Write_REG8(0x53,0x00);//图像窗口设置
-			SCCB_Write_REG8(0x54,0x00);//图像窗口设置
+			SCCB_Write_REG8(0x54,0x3c);//垂直偏移60行，居中裁切为800x480
 			SCCB_Write_REG8(0x55,0x00);//图像窗口设置
 			SCCB_Write_REG8(0x5a,0xC8);
-			SCCB_Write_REG8(0x5b,0x96);
+			SCCB_Write_REG8(0x5b,0x78);//输出高度480，与HDMI显示模式一致
 			SCCB_Write_REG8(0x5c,0x00);
 		   //
 			SCCB_Write_REG8(0xd3,0x82);//auto设置要小心   82

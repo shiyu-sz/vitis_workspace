@@ -2,10 +2,17 @@
 
 int main(void)
 {
+	xil_printf("run app!\n");
 	PS_IIC_Init(&SCCB,IIC_DEVICE_ID,400000);
+	xil_printf("%s:%d\n", __func__, __LINE__);
+	SII9022_Init();	//初始化HDMI发射芯片
+	xil_printf("%s:%d\n", __func__, __LINE__);
 	usleep(20000);  //上电到开始配置sccb至少等待20ms
 	Camera_check();	//检测摄像头
+	xil_printf("%s:%d\n", __func__, __LINE__);
 	Camera_Init();//初始化摄像头
+
+	xil_printf("%s:%d OV5640_Check=%d, OV2640_Check=%d\n", __func__, __LINE__, OV5640_Check, OV2640_Check);
 
 	//配置VDMA
 	run_vdma_frame_buffer(&Vdma, VDMA_ID, RGB_LCD.width, RGB_LCD.height,
@@ -23,6 +30,7 @@ int main(void)
 		//根据检测到的摄像头进行初始化，实现热插拔
 		if(NO_Camera&(OV5640_Check|OV2640_Check))
 		{
+			xil_printf("%s:%d OV5640_Check=%d, OV2640_Check=%d\n", __func__, __LINE__, OV5640_Check, OV2640_Check);
 			NO_Camera = 0;
 			if(OV5640_Check)
 			{
@@ -34,6 +42,7 @@ int main(void)
 		}else{
 			Camera_check();
 			usleep(1000000);//修改检测间隔时间
+			xil_printf("%s:%d OV5640_Check=%d, OV2640_Check=%d\n", __func__, __LINE__, OV5640_Check, OV2640_Check);
 		}
 	}
     return 0;
