@@ -26,7 +26,9 @@
 #include "SCU_TIMER.h"
 
 #include "lcd.h"
+#include "PS_IIC.h"
 #include "Camera.h"
+#include "SII9022.h"
 
 //用户头文件
 

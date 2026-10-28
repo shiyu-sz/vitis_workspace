@@ -24,3 +24,11 @@ bsp reload
 platform generate
 platform clean
 platform generate
+platform clean
+platform generate
+platform config -updatehw {/home/sy/vivado_project/vitis/ov2640_ddr_hdmi/design_1_wrapper.xsa}
+platform clean
+platform generate
+platform config -updatehw {/home/sy/vivado_project/vitis/ov2640_ddr_hdmi/design_1_wrapper.xsa}
+platform clean
+platform generate
