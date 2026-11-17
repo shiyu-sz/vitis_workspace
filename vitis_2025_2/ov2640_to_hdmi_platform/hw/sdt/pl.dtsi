@@ -1,0 +1,25 @@
+/ {
+	amba_pl: amba_pl {
+		ranges;
+		compatible = "simple-bus";
+		#address-cells = <1>;
+		#size-cells = <1>;
+		firmware-name = "design_1_wrapper.bit.bin";
+		clocking0: clocking0 {
+			compatible = "xlnx,fclk";
+			assigned-clocks = <&clkc 15>;
+			assigned-clock-rates = <50000000>;
+			#clock-cells = <0>;
+			clock-output-names = "fabric_clk";
+			clocks = <&clkc 15>;
+		};
+		afi0: afi0@f8008000 {
+			status = "okay";
+			compatible = "xlnx,afi-fpga";
+			#address-cells = <1>;
+			reg = <0xF8008000 0x1000>;
+			#size-cells = <0>;
+			xlnx,afi-width = <0>;
+		};
+	};
+};
